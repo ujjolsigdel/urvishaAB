@@ -1,0 +1,36 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F3D2A"/>
+      <stop offset="0.55" stop-color="#14573A"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="200" y1="150" x2="1200" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9F6E1" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#E9F6E1" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- Soft mist -->
+  <path d="M-60 590C210 420 400 410 630 520C860 630 1090 700 1320 610C1550 520 1710 520 1730 560V900H-60V590Z" fill="url(#mist)"/>
+
+  <!-- Abstract lawn lines -->
+  <g opacity="0.18">
+    <path d="M-40 760C340 640 640 640 960 740C1280 840 1500 850 1660 820" stroke="#B9EBD1" stroke-width="2"/>
+    <path d="M-40 800C360 690 680 690 1020 790C1360 890 1540 900 1660 870" stroke="#B9EBD1" stroke-width="2"/>
+    <path d="M-40 840C380 740 720 740 1080 840C1440 940 1580 950 1660 920" stroke="#B9EBD1" stroke-width="2"/>
+  </g>
+
+  <!-- Leaf blobs -->
+  <g filter="url(#soft)" opacity="0.55">
+    <path d="M260 230C320 160 430 150 520 200C610 250 640 360 580 430C520 500 390 480 310 410C230 340 200 300 260 230Z" fill="#2BA468" fill-opacity="0.35"/>
+    <path d="M1260 220C1340 170 1450 190 1500 270C1550 350 1500 460 1400 490C1300 520 1200 450 1180 360C1160 270 1180 270 1260 220Z" fill="#63AD35" fill-opacity="0.25"/>
+    <path d="M980 120C1060 70 1160 90 1200 170C1240 250 1190 340 1100 370C1010 400 920 350 900 270C880 190 900 170 980 120Z" fill="#82D8AE" fill-opacity="0.18"/>
+  </g>
+</svg>
+
