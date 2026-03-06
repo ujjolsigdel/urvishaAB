@@ -12,9 +12,9 @@ export default function Contact() {
         <Container>
           <AnimatedSection>
             <SectionHeading
-              eyebrow="Contact"
-              title="Request a quote or ask a question"
-              description="Share what you need and we’ll respond quickly. We work with private homeowners, businesses, housing associations, and property management companies."
+              eyebrow="Kontakt"
+              title="Begär ett offert eller ställ en fråga"
+              description="Dela vad du behöver så svarar vi snabbt. Vi arbetar med privata husägare, företag, bostadskooperationer och fastighetsförvaltningsbolag."
             />
           </AnimatedSection>
         </Container>
@@ -26,11 +26,10 @@ export default function Contact() {
             <AnimatedSection>
               <div className="rounded-3xl bg-white p-6 shadow-soft ring-soft sm:p-8">
                 <div className="text-lg font-semibold text-slate-900">
-                  Business details
+                  Företagsuppgifter
                 </div>
                 <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                  We typically respond within 1 business day. For urgent winter
-                  needs, please call.
+                  Vi svarar vanligtvis inom 1 arbetsdag. För brådskande vinterbehov, vänligen ring.
                 </p>
 
                 <div className="mt-6 space-y-4 text-sm">
@@ -42,7 +41,7 @@ export default function Contact() {
                       <div className="font-semibold text-slate-900">
                         +46 (0)73 666 40 46
                       </div>
-                      <div className="text-slate-600">Phone</div>
+                      <div className="text-slate-600">Telefon</div>
                     </div>
                   </div>
 
@@ -52,9 +51,9 @@ export default function Contact() {
                     </span>
                     <div>
                       <div className="font-semibold text-slate-900">
-                        info@urvishaab.se
+                        nordicbarahaiab@gmail.com
                       </div>
-                      <div className="text-slate-600">Email</div>
+                      <div className="text-slate-600">E-post</div>
                     </div>
                   </div>
 
@@ -64,9 +63,9 @@ export default function Contact() {
                     </span>
                     <div>
                       <div className="font-semibold text-slate-900">
-                        Mon–Fri 08:00–17:00
+                        Mån–Fre 08:00–17:00
                       </div>
-                      <div className="text-slate-600">Business hours</div>
+                      <div className="text-slate-600">Kontorstider</div>
                     </div>
                   </div>
 
@@ -76,7 +75,7 @@ export default function Contact() {
                     </span>
                     <div>
                       <div className="font-semibold text-slate-900">
-                        Sweden (primary areas)
+                        Sverige (primära områden)
                       </div>
                       <div className="text-slate-600">
                         Stockholm • Uppsala • Södertälje • Västerås
@@ -91,11 +90,10 @@ export default function Contact() {
               <AnimatedSection delay={0.05}>
                 <div className="rounded-3xl bg-slate-50 p-6 ring-1 ring-slate-900/10 sm:p-8">
                   <div className="text-sm font-semibold text-slate-900">
-                    Service area map
+                    Serviceområdeskarta
                   </div>
                   <p className="mt-2 text-sm text-slate-600">
-                    We operate across Sweden, with a strong focus on the
-                    Stockholm region.
+                    Vi opererar över hela Sverige, med starkt fokus på Stockholmsregionen.
                   </p>
                   <div className="mt-4">
                     <MapEmbed />

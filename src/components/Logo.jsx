@@ -9,9 +9,9 @@ export default function Logo({ className, compact = false }) {
       </span>
       <div className={clsx('leading-tight', compact && 'hidden sm:block')}>
         <div className="text-sm font-semibold tracking-tight text-slate-900">
-          Urvisha AB
+          Nordic Barahai AB
         </div>
-        <div className="text-xs text-slate-500">for Property Maintenance</div>
+        <div className="text-xs text-slate-500">för Fastighetsunderhåll</div>
       </div>
     </div>
   )

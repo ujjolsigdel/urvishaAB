@@ -5,12 +5,12 @@ import Container from './Container.jsx'
 import Logo from './Logo.jsx'
 
 const serviceLinks = [
-  { label: 'Lawn mowing', to: '/services' },
-  { label: 'Garden maintenance', to: '/services' },
-  { label: 'Hedge trimming', to: '/services' },
-  { label: 'Landscaping', to: '/services' },
-  { label: 'Snow removal', to: '/services' },
-  { label: 'Business property care', to: '/services' },
+  { label: 'Gräsklippning', to: '/services' },
+  { label: 'Trädgårdsunderhåll', to: '/services' },
+  { label: 'Häckklippning', to: '/services' },
+  { label: 'Trädgårdsdesign', to: '/services' },
+  { label: 'Snöröjning', to: '/services' },
+  { label: 'Fastighetsunderhåll för företag', to: '/services' },
 ]
 
 export default function Footer() {
@@ -21,9 +21,9 @@ export default function Footer() {
           <div className="md:col-span-5">
             <Logo />
             <p className="mt-4 max-w-md text-sm leading-relaxed text-slate-600">
-              Professional gardening and property maintenance services for private
-              homeowners, businesses, housing associations, and property
-              management companies across Sweden.
+              Professionella trädgårds- och fastighetsunderhållstjänster för privata
+              husägare, företag, bostadskooperationer och fastighetsförvaltningsbolag
+              över hela Sverige.
             </p>
             <div className="mt-5 flex items-center gap-3">
               <a
@@ -57,7 +57,7 @@ export default function Footer() {
           </div>
 
           <div className="md:col-span-3">
-            <div className="text-sm font-semibold text-slate-900">Services</div>
+            <div className="text-sm font-semibold text-slate-900">Tjänster</div>
             <ul className="mt-4 space-y-2 text-sm">
               {serviceLinks.map((it) => (
                 <li key={it.label}>
@@ -73,7 +73,7 @@ export default function Footer() {
           </div>
 
           <div className="md:col-span-4">
-            <div className="text-sm font-semibold text-slate-900">Contact</div>
+            <div className="text-sm font-semibold text-slate-900">Kontakt</div>
             <div className="mt-4 space-y-3 text-sm text-slate-600">
               <div className="flex items-start gap-3">
                 <FiPhone className="mt-0.5 h-5 w-5 text-forest-700" />
@@ -84,7 +84,7 @@ export default function Footer() {
                   >
                     +46 (0)73 666 40 46
                   </a>
-                  <div>Mon–Fri 08:00–17:00</div>
+                  <div>Mån–Fre 08:00–17:00</div>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -92,17 +92,17 @@ export default function Footer() {
                 <div>
                   <a
                     className="font-medium text-slate-900 hover:text-forest-800"
-                    href="mailto:info@urvishaab.se"
+                    href="mailto:nordicbarahaiab@gmail.com"
                   >
-                    info@urvishaab.se
+                    nordicbarahaiab@gmail.com
                   </a>
-                  <div>Quotes &amp; bookings</div>
+                  <div>Offerter &amp; bokningar</div>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <FiMapPin className="mt-0.5 h-5 w-5 text-forest-700" />
                 <div>
-                  <div className="text-slate-900">Service areas</div>
+                  <div className="text-slate-900">Serviceområden</div>
                   <div>Stockholm • Uppsala • Södertälje • Västerås</div>
                 </div>
               </div>
@@ -112,15 +112,15 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col gap-2 border-t border-slate-900/10 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            © {new Date().getFullYear()} Nordic Garden &amp; Property Care. All
-            rights reserved.
+            © {new Date().getFullYear()} Nordic Barahai AB. Alla
+            rättigheter förbehållna.
           </div>
           <div className="flex items-center gap-4">
             <Link className="hover:text-slate-700" to="/services">
-              Services
+              Tjänster
             </Link>
             <Link className="hover:text-slate-700" to="/contact">
-              Contact
+              Kontakt
             </Link>
           </div>
         </div>

@@ -10,7 +10,7 @@ export default function MapEmbed({ className }) {
     >
       <div className="relative w-full" style={{ paddingTop: '62%' }}>
         <iframe
-          title="Service area map"
+          title="Serviceområdeskarta"
           className="absolute inset-0 h-full w-full"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

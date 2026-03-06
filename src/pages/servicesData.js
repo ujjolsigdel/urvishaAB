@@ -12,91 +12,91 @@ import {
 export const services = [
   {
     id: 'lawn-mowing',
-    title: 'Lawn mowing',
+    title: 'Gräsklippning',
     description:
-      'Consistent, clean mowing that keeps your lawn healthy and presentable all season.',
+      'Konsekvent, ren klippning som håller din gräsmatta frisk och presentabel hela säsongen.',
     icon: FaTractor,
-    group: 'Gardening',
+    group: 'Trädgårdsskötsel',
   },
   {
     id: 'grass-cutting',
-    title: 'Grass cutting',
+    title: 'Gräsklippning med kanter',
     description:
-      'Neat edges and even cuts for a polished look around paths, beds, and fences.',
+      'Rena kanter och jämna klipp för ett polerat utseende runt stigar, rabatter och staket.',
     icon: FaLeaf,
-    group: 'Gardening',
+    group: 'Trädgårdsskötsel',
   },
   {
     id: 'garden-maintenance',
-    title: 'Garden maintenance',
+    title: 'Trädgårdsunderhåll',
     description:
-      'Ongoing care for beds, weeds, borders, and seasonal tasks—tailored to your property.',
+      'Löpande vård av rabatter, ogräs, kanter och säsongsuppgifter—anpassat till din fastighet.',
     icon: FaBroom,
-    group: 'Gardening',
+    group: 'Trädgårdsskötsel',
   },
   {
     id: 'hedge-trimming',
-    title: 'Hedge trimming',
+    title: 'Häckklippning',
     description:
-      'Crisp, professional hedge shaping for privacy, safety, and curb appeal.',
+      'Krispig, professionell häckformning för integritet, säkerhet och fastighetens värde.',
     icon: GiGardeningShears,
-    group: 'Gardening',
+    group: 'Trädgårdsskötsel',
   },
   {
     id: 'tree-pruning',
-    title: 'Tree pruning',
+    title: 'Trädbeskärning',
     description:
-      'Selective pruning to improve structure, light, and safety while protecting tree health.',
+      'Selektiv beskärning för att förbättra struktur, ljus och säkerhet samtidigt som trädens hälsa skyddas.',
     icon: FaTree,
-    group: 'Gardening',
+    group: 'Trädgårdsskötsel',
   },
   {
     id: 'landscaping',
-    title: 'Landscaping',
+    title: 'Trädgårdsdesign',
     description:
-      'Planting, bed design, gravel, and small outdoor upgrades with a clean Nordic finish.',
+      'Plantering, rabattdesign, grus och små utomhusuppgraderingar med en ren nordisk finish.',
     icon: FaTools,
-    group: 'Gardening',
+    group: 'Trädgårdsskötsel',
   },
   {
     id: 'seasonal-cleanup',
-    title: 'Seasonal yard cleanup',
+    title: 'Säsongs trädgårdsrensning',
     description:
-      'Spring and autumn cleanups for beds, patios, and green waste—fast and thorough.',
+      'Vår- och höstrensningar för rabatter, terrasser och grönt avfall—snabbt och grundligt.',
     icon: FaBroom,
-    group: 'Seasonal',
+    group: 'Säsongsarbete',
   },
   {
     id: 'leaf-removal',
-    title: 'Leaf removal',
+    title: 'Lövborttagning',
     description:
-      'Keep paths and lawns tidy and safe with efficient collection and disposal.',
+      'Håll stigar och gräsmattor rena och säkra med effektiv insamling och bortskaffande.',
     icon: FaLeaf,
-    group: 'Seasonal',
+    group: 'Säsongsarbete',
   },
   {
     id: 'snow-plowing',
-    title: 'Snow plowing',
+    title: 'Snöplogning',
     description:
-      'Timely plowing for driveways and access roads—reducing downtime and risks.',
+      'Tidsenlig plogning för uppfarter och tillfartsvägar—minskar stillestånd och risker.',
     icon: FaSnowplow,
-    group: 'Winter',
+    group: 'Vinter',
   },
   {
     id: 'snow-removal',
-    title: 'Snow removal',
+    title: 'Snöröjning',
     description:
-      'Snow clearing for entrances, walkways, and parking areas with safety-first routines.',
+      'Snöröjning för entréer, gångvägar och parkeringsområden med säkerhetsförsta rutiner.',
     icon: FaSnowplow,
-    group: 'Winter',
+    group: 'Vinter',
   },
   {
     id: 'business-property-maintenance',
-    title: 'Property maintenance for businesses',
+    title: 'Fastighetsunderhåll för företag',
     description:
-      'Reliable outdoor maintenance for commercial sites with predictable scheduling and reporting.',
+      'Pålitligt utomhusunderhåll för kommersiella platser med förutsägbara scheman och rapportering.',
     icon: FaBuilding,
-    group: 'Commercial',
+    group: 'Kommersiellt',
   },
 ]
 

@@ -6,24 +6,24 @@ import { FiCheck } from 'react-icons/fi'
 
 const reasons = [
   {
-    title: 'Scandinavian-quality finish',
-    desc: 'Clean edges, tidy sites, and a professional look that improves curb appeal.',
+    title: 'Skandinavisk kvalitetsfinish',
+    desc: 'Rena kanter, välstädade platser och ett professionellt utseende som förbättrar fastighetens värde.',
   },
   {
-    title: 'Clear communication',
-    desc: 'Straightforward quotes, predictable schedules, and quick responses.',
+    title: 'Tydlig kommunikation',
+    desc: 'Raka offerter, förutsägbara scheman och snabba svar.',
   },
   {
-    title: 'Year-round coverage',
-    desc: 'Summer garden care, autumn leaf removal, and winter snow services.',
+    title: 'Året runt-täckning',
+    desc: 'Sommars trädgårdsvård, höstbladsvällning och vintersnötjänster.',
   },
   {
-    title: 'Residential + commercial expertise',
-    desc: 'We work with homeowners, businesses, housing associations, and property managers.',
+    title: 'Expertis för bostäder och företag',
+    desc: 'Vi arbetar med husägare, företag, bostadskooperationer och fastighetsförvaltare.',
   },
 ]
 
-const areas = ['Stockholm', 'Uppsala', 'Södertälje', 'Västerås', 'Nearby regions']
+const areas = ['Stockholm', 'Uppsala', 'Södertälje', 'Västerås', 'Närliggande regioner']
 
 export default function About() {
   return (
@@ -32,9 +32,9 @@ export default function About() {
         <Container>
           <AnimatedSection>
             <SectionHeading
-              eyebrow="About us"
-              title="A dependable partner for gardens and properties in Sweden"
-              description="We help clients maintain outdoor areas that feel welcoming, safe, and well cared for—without hassle."
+              eyebrow="Om oss"
+              title="En pålitlig partner för trädgårdar och fastigheter i Sverige"
+              description="Vi hjälper kunder att underhålla utomhusområden som känns välkomnande, säkra och välskötta—utan besvär."
             />
           </AnimatedSection>
         </Container>
@@ -44,21 +44,21 @@ export default function About() {
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
           <AnimatedSection className="lg:col-span-7">
             <div className="rounded-3xl bg-white p-7 shadow-soft ring-soft sm:p-10">
-              <h3 className="text-lg font-semibold text-slate-900">Our mission</h3>
+              <h3 className="text-lg font-semibold text-slate-900">Vårt uppdrag</h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-600">
-                Deliver reliable, professional gardening and outdoor maintenance
-                services with Scandinavian simplicity: clear communication,
-                tidy work, and consistent results.
+                Leverera pålitliga, professionella trädgårds- och utomhusunderhållstjänster
+                med skandinavisk enkelhet: tydlig kommunikation, rent arbete och
+                konsekventa resultat.
               </p>
 
               <h3 className="mt-8 text-lg font-semibold text-slate-900">
-                Experience you can trust
+                Erfarenhet du kan lita på
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-600">
-                Our team supports both residential and commercial sites with
-                routines that respect your property, your neighbors, and your
-                schedule. From weekly lawn care to seasonal cleanups and winter
-                snow services, we plan ahead so everything runs smoothly.
+                Vårt team stödjer både bostads- och kommersiella platser med
+                rutiner som respekterar din fastighet, dina grannar och ditt
+                schema. Från veckovis gräsmattsvård till säsongsrensningar och vintersnötjänster,
+                vi planerar i förväg så att allt går smidigt.
               </p>
             </div>
           </AnimatedSection>
@@ -66,10 +66,10 @@ export default function About() {
           <AnimatedSection className="lg:col-span-5" delay={0.05}>
             <div className="rounded-3xl bg-gradient-to-br from-forest-50 to-white p-7 shadow-soft ring-soft sm:p-10">
               <div className="text-sm font-semibold text-slate-900">
-                Service areas
+                Serviceområden
               </div>
               <p className="mt-2 text-sm text-slate-600">
-                We primarily serve these areas in Sweden:
+                Vi betjänar främst dessa områden i Sverige:
               </p>
               <ul className="mt-4 space-y-3 text-sm">
                 {areas.map((a) => (
@@ -82,8 +82,7 @@ export default function About() {
                 ))}
               </ul>
               <p className="mt-5 text-xs text-slate-500">
-                Not sure if you’re within range? Send your address and we’ll
-                confirm quickly.
+                Osäker på om du är inom räckhåll? Skicka din adress så bekräftar vi snabbt.
               </p>
             </div>
           </AnimatedSection>
@@ -92,9 +91,9 @@ export default function About() {
         <div className="mt-12">
           <AnimatedSection>
             <SectionHeading
-              eyebrow="Why choose us"
-              title="Professional care that protects your property’s value"
-              description="Our approach is simple: do the job right, keep it tidy, and make it easy for you."
+              eyebrow="Varför välja oss?"
+              title="Professionell vård som skyddar din fastighets värde"
+              description="Vårt tillvägagångssätt är enkelt: gör jobbet rätt, håll det rent och gör det enkelt för dig."
             />
           </AnimatedSection>
 

@@ -36,10 +36,10 @@ export default function Navbar() {
 
   const items = useMemo(
     () => [
-      { to: '/', label: 'Home' },
-      { to: '/services', label: 'Services' },
-      { to: '/about', label: 'About' },
-      { to: '/contact', label: 'Contact' },
+      { to: '/', label: 'Hem' },
+      { to: '/services', label: 'Tjänster' },
+      { to: '/about', label: 'Om oss' },
+      { to: '/contact', label: 'Kontakt' },
     ],
     []
   )
@@ -47,11 +47,11 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-900/10 bg-white/80 backdrop-blur">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 py-3 container-pad">
-        <Link to="/" className="flex items-center gap-3" aria-label="Home">
+        <Link to="/" className="flex items-center gap-3" aria-label="Hem">
           <Logo />
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-1 md:flex" aria-label="Primär">
           {items.map((it) => (
             <NavItem key={it.to} to={it.to}>
               {it.label}
@@ -61,14 +61,14 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-3 md:flex">
           <Button to="/contact#form" className="px-5">
-            Request a Quote <FiArrowRight />
+            Begär ett offert <FiArrowRight />
           </Button>
         </div>
 
         <button
           type="button"
           className="inline-flex items-center justify-center rounded-xl p-2 text-slate-800 ring-soft shadow-sm transition hover:bg-slate-50 md:hidden"
-          aria-label={open ? 'Close menu' : 'Open menu'}
+          aria-label={open ? 'Stäng meny' : 'Öppna meny'}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
         >
@@ -88,7 +88,7 @@ export default function Navbar() {
                 ))}
                 <div className="pt-2">
                   <Button to="/contact#form" className="w-full justify-center">
-                    Request a Quote <FiArrowRight />
+                    Begär ett offert <FiArrowRight />
                   </Button>
                 </div>
               </div>

@@ -16,7 +16,7 @@ function groupBy(items, key) {
 
 export default function Services() {
   const grouped = groupBy(services, 'group')
-  const order = ['Gardening', 'Seasonal', 'Winter', 'Commercial']
+  const order = ['Trädgårdsskötsel', 'Säsongsarbete', 'Vinter', 'Kommersiellt']
 
   return (
     <div className="pb-10">
@@ -24,9 +24,9 @@ export default function Services() {
         <Container>
           <AnimatedSection>
             <SectionHeading
-              eyebrow="Services"
-              title="Everything you need for a clean, safe, well-kept outdoor environment"
-              description="From weekly lawn care to seasonal cleanups and winter snow services. We support homeowners, businesses, housing associations, and property managers."
+              eyebrow="Tjänster"
+              title="Allt du behöver för en ren, säker och välskött utomhusmiljö"
+              description="Från veckovis gräsmattsvård till säsongsrensningar och vintersnötjänster. Vi stödjer husägare, företag, bostadskooperationer och fastighetsförvaltare."
             />
           </AnimatedSection>
         </Container>
@@ -44,7 +44,7 @@ export default function Services() {
                       {g}
                     </h3>
                     <div className="hidden text-sm text-slate-500 sm:block">
-                      Request a quote for one-time or recurring work.
+                      Begär ett offert för engångs- eller återkommande arbete.
                     </div>
                   </div>
                 </AnimatedSection>

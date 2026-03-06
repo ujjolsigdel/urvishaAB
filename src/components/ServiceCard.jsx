@@ -6,7 +6,7 @@ export default function ServiceCard({
   icon: Icon,
   title,
   description,
-  cta = 'Request a Quote',
+  cta = 'Begär en offert',
   className,
 }) {
   return (

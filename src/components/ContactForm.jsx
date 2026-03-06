@@ -18,7 +18,7 @@ function Field({ label, required, className, children }) {
       <div className="mb-2 flex items-center gap-2 text-sm font-medium text-slate-900">
         <span>{label}</span>
         {required ? (
-          <span className="text-xs font-semibold text-slate-400">Required</span>
+          <span className="text-xs font-semibold text-slate-400">Obligatoriskt</span>
         ) : null}
       </div>
       {children}
@@ -56,7 +56,7 @@ export default function ContactForm() {
 
     if (!values.name || !values.email || !values.service || !values.message) {
       setStatus('error')
-      setError('Please fill in the required fields.')
+      setError('Vänligen fyll i de obligatoriska fälten.')
       return
     }
 
@@ -65,7 +65,7 @@ export default function ContactForm() {
     try {
       if (!configured) {
         throw new Error(
-          'Email sending is not configured yet. Add EmailJS keys to your .env file.'
+          'E-postutskick är inte konfigurerat än. Lägg till EmailJS-nycklar i din .env-fil.'
         )
       }
 
@@ -86,7 +86,7 @@ export default function ContactForm() {
       setValues(initial)
     } catch (err) {
       setStatus('error')
-      setError(err?.message || 'Something went wrong. Please try again.')
+      setError(err?.message || 'Något gick fel. Försök igen.')
     }
   }
 
@@ -99,15 +99,15 @@ export default function ContactForm() {
       <div className="flex items-start justify-between gap-6">
         <div>
           <div className="text-lg font-semibold text-slate-900">
-            Request a quote
+            Begär ett offert
           </div>
           <p className="mt-1 text-sm text-slate-600">
-            Tell us what you need and we’ll get back quickly with a clear quote.
+            Berätta vad du behöver så återkommer vi snabbt med ett tydligt offert.
           </p>
         </div>
         <div className="hidden sm:block">
           <div className="rounded-2xl bg-forest-50 px-4 py-2 text-xs font-semibold text-forest-800 ring-1 ring-forest-700/10">
-            Sweden-based service
+            Sverigebaserad tjänst
           </div>
         </div>
       </div>
@@ -117,10 +117,10 @@ export default function ContactForm() {
           <div className="flex items-start gap-3">
             <FiAlertTriangle className="mt-0.5 h-5 w-5" />
             <div>
-              <div className="font-semibold">Email sending not configured</div>
+              <div className="font-semibold">E-postutskick inte konfigurerat</div>
               <div className="mt-1 text-amber-900/80">
-                Add EmailJS keys in your <code className="font-mono">.env</code>{' '}
-                file to send form submissions to your email.
+                Lägg till EmailJS-nycklar i din <code className="font-mono">.env</code>{' '}
+                fil för att skicka formulärinlämningar till din e-post.
               </div>
             </div>
           </div>
@@ -128,26 +128,26 @@ export default function ContactForm() {
       ) : null}
 
       <div className="mt-6 grid gap-4 sm:grid-cols-2">
-        <Field label="Name" required>
+        <Field label="Namn" required>
           <input
             className={inputBase}
             value={values.name}
             onChange={(e) => update('name', e.target.value)}
-            placeholder="Your name"
+            placeholder="Ditt namn"
             autoComplete="name"
           />
         </Field>
-        <Field label="Email" required>
+        <Field label="E-post" required>
           <input
             className={inputBase}
             value={values.email}
             onChange={(e) => update('email', e.target.value)}
-            placeholder="name@email.com"
+            placeholder="namn@epost.se"
             autoComplete="email"
             type="email"
           />
         </Field>
-        <Field label="Phone">
+        <Field label="Telefon">
           <input
             className={inputBase}
             value={values.phone}
@@ -156,46 +156,46 @@ export default function ContactForm() {
             autoComplete="tel"
           />
         </Field>
-        <Field label="Address">
+        <Field label="Adress">
           <input
             className={inputBase}
             value={values.address}
             onChange={(e) => update('address', e.target.value)}
-            placeholder="Street, city"
+            placeholder="Gata, stad"
             autoComplete="street-address"
           />
         </Field>
-        <Field label="Service requested" required className="sm:col-span-2">
+        <Field label="Begärd tjänst" required className="sm:col-span-2">
           <select
             className={clsx(inputBase, 'pr-10')}
             value={values.service}
             onChange={(e) => update('service', e.target.value)}
           >
-            <option value="">Select a service</option>
-            <option>Lawn mowing / Grass cutting</option>
-            <option>Garden maintenance</option>
-            <option>Hedge trimming</option>
-            <option>Tree pruning</option>
-            <option>Landscaping</option>
-            <option>Seasonal yard cleanup / Leaf removal</option>
-            <option>Snow plowing / Snow removal</option>
-            <option>Business property maintenance</option>
-            <option>Other (describe below)</option>
+            <option value="">Välj en tjänst</option>
+            <option>Gräsklippning / Gräsklippning med kanter</option>
+            <option>Trädgårdsunderhåll</option>
+            <option>Häckklippning</option>
+            <option>Trädbeskärning</option>
+            <option>Trädgårdsdesign</option>
+            <option>Säsongs trädgårdsrensning / Lövborttagning</option>
+            <option>Snöplogning / Snöröjning</option>
+            <option>Fastighetsunderhåll för företag</option>
+            <option>Annan (beskriv nedan)</option>
           </select>
         </Field>
-        <Field label="Message" required className="sm:col-span-2">
+        <Field label="Meddelande" required className="sm:col-span-2">
           <textarea
             className={clsx(inputBase, 'min-h-[140px] resize-y')}
             value={values.message}
             onChange={(e) => update('message', e.target.value)}
-            placeholder="Tell us about your property, timing, and any special requests."
+            placeholder="Berätta om din fastighet, tidpunkt och eventuella särskilda önskemål."
           />
         </Field>
       </div>
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div className="text-xs text-slate-500">
-          By submitting, you agree that we may contact you about your request.
+          Genom att skicka godkänner du att vi kan kontakta dig angående din förfrågan.
         </div>
 
         <button
@@ -208,15 +208,15 @@ export default function ContactForm() {
         >
           {status === 'sending' ? (
             <>
-              <FiLoader className="animate-spin" /> Sending…
+              <FiLoader className="animate-spin" /> Skickar…
             </>
           ) : status === 'sent' ? (
             <>
-              <FiCheckCircle /> Sent
+              <FiCheckCircle /> Skickat
             </>
           ) : (
             <>
-              <FiSend /> Send request
+              <FiSend /> Skicka förfrågan
             </>
           )}
         </button>

@@ -12,21 +12,21 @@ import { FiArrowRight, FiCheck } from 'react-icons/fi'
 const testimonials = [
   {
     quote:
-      'Reliable, punctual and tidy. Our garden looks better every week and communication is excellent.',
+      'Pålitlig, punktlig och snygg. Vår trädgård ser bättre ut varje vecka och kommunikationen är utmärkt.',
     name: 'Anna S.',
-    role: 'Homeowner, Stockholm',
+    role: 'Husägare, Stockholm',
   },
   {
     quote:
-      'Great seasonal planning. Snow removal is fast and the property always feels safe and well maintained.',
+      'Bra säsongsplanering. Snöröjningen går snabbt och fastigheten känns alltid säker och välskött.',
     name: 'Johan P.',
-    role: 'Property manager',
+    role: 'Fastighetsförvaltare',
   },
   {
     quote:
-      'Professional service and clear quotes. The landscaping upgrade gave our entrance a modern Nordic look.',
+      'Professionell service och tydliga offerter. Uppgraderingen av trädgården gav vår entré ett modernt nordiskt utseende.',
     name: 'Maria K.',
-    role: 'Office manager, Uppsala',
+    role: 'Kontorschef, Uppsala',
   },
 ]
 
@@ -48,35 +48,35 @@ export default function Home() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-xs font-semibold text-white ring-1 ring-white/15 backdrop-blur">
               <span className="inline-flex h-2 w-2 rounded-full bg-moss-300" />
-              Gardening &amp; property maintenance in Sweden
+              Trädgårdsskötsel &amp; fastighetsskötsel i Sverige
             </div>
             <h1 className="mt-5 text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-              Modern, reliable outdoor care for homes and businesses
+              Modern och pålitlig utomhusvård för hem och företag
             </h1>
             <p className="mt-5 text-base leading-relaxed text-white/80 sm:text-lg">
-              We keep lawns, gardens and outdoor areas clean, safe and
-              well-maintained—year-round. Trusted by homeowners, businesses,
-              housing associations and property managers.
+              Vi håller gräsmattor, trädgårdar och utomhusområden rena, säkra och
+              väl underhållna—hela året. Litar på av husägare, företag,
+              bostadskooperationer och fastighetssällskap.
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
               <Button to="/contact#form">
-                Request a Quote <FiArrowRight />
+                Begär ett offert <FiArrowRight />
               </Button>
               <Button
                 to="/services"
                 variant="secondary"
                 className="bg-white/90"
               >
-                Explore services
+                Utforska tjänster
               </Button>
             </div>
 
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
               {[
-                'Private homeowners',
-                'Businesses',
-                'Housing associations',
+                'Privata husägare',
+                'Företag',
+                'Bostadskooperationer',
               ].map((t) => (
                 <div
                   key={t}
@@ -96,9 +96,9 @@ export default function Home() {
       <Container className="py-14 sm:py-16">
         <AnimatedSection>
           <SectionHeading
-            eyebrow="A better way to maintain outdoor areas"
-            title="Professional results with Scandinavian simplicity"
-            description="Clear communication, tidy work, and a predictable schedule. Choose one-time jobs or ongoing maintenance packages."
+            eyebrow="Ett bättre sätt att underhålla utomhusområden"
+            title="Professionella resultat med skandinavisk enkelhet"
+            description="Tydlig kommunikation, rent arbete och ett förutsägbart schema. Välj engångsjobb eller återkommande underhållspaket."
           />
         </AnimatedSection>
 
@@ -116,7 +116,7 @@ export default function Home() {
 
         <div className="mt-10 flex justify-center">
           <Button to="/services" variant="ghost" className="px-5">
-            View all services <FiArrowRight />
+            Visa alla tjänster <FiArrowRight />
           </Button>
         </div>
       </Container>
@@ -125,9 +125,9 @@ export default function Home() {
         <Container>
           <AnimatedSection>
             <SectionHeading
-              eyebrow="Testimonials"
-              title="Trusted by clients across Sweden"
-              description="We aim for long-term relationships—built on reliability, quality, and a clean finish."
+              //eyebrow="Testimonials"
+              title="Betrodd av kunder över hela Sverige"
+              description="Vi strävar efter långsiktiga relationer som bygger på tillförlitlighet, kvalitet och ett rent resultat."
             />
           </AnimatedSection>
 

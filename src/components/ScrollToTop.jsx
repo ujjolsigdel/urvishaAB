@@ -7,7 +7,7 @@ export default function ScrollToTop() {
   useEffect(() => {
     if (hash) {
       const id = hash.replace('#', '')
-      // Let the new route render before scrolling to the anchor.
+      // Låt den nya rutten rendera innan du rullar till ankaret.
       requestAnimationFrame(() => {
         const el = document.getElementById(id)
         if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })

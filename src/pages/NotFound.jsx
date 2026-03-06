@@ -15,15 +15,15 @@ export default function NotFound() {
             {status}
           </div>
           <h1 className="mt-2 text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
-            Page not found
+            Sidan hittades inte
           </h1>
           <p className="mt-3 max-w-xl text-sm leading-relaxed text-slate-600">
-            The page you’re looking for doesn’t exist or has been moved.
+            Sidan du letar efter finns inte eller har flyttats.
           </p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <Button to="/">Go to Home</Button>
+            <Button to="/">Gå till Hem</Button>
             <Link className="text-sm font-semibold text-forest-800" to="/contact">
-              Contact us →
+              Kontakta oss →
             </Link>
           </div>
         </div>
